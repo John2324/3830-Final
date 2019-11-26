@@ -1,6 +1,7 @@
 var PlayerEntity = me.ObjectEntity.extend({
   init: function(x, y, settings) {
     this.parent(x, y, settings);
+    me.game.viewport.fadeIn("#B70000", 200);
     me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
     this.setVelocity(4,14);
   },
