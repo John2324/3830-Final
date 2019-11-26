@@ -24,9 +24,9 @@ var resources = [{
     src: "coin.png"
   },
   {
-    name: "badGuy",
+    name: "enemy",
     type: "image",
-    src: "badGuy.png"
+    src: "enemy.png"
   },
   {
     name: "thorn",

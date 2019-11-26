@@ -20,8 +20,6 @@ var PlayerEntity = me.ObjectEntity.extend({
   },
   gameOver: function() {
     me.state.change(me.state.PLAY);
-    document.getElementById('game_state').innerHTML = "Try Again";
-    document.getElementById('instructions').innerHTML = "";
   },
   youWin: function() {
     me.state.change(me.state.PLAY);
@@ -42,7 +40,7 @@ var CoinEntity = me.CollectableEntity.extend({
 });
 var EnemyEntity = me.ObjectEntity.extend({
   init: function(x, y, settings) {
-    settings.image = "badguy";
+    settings.image = "enemy";
     settings.spritewidth = 16;
     this.parent(x, y, settings);
     this.startX = x;
