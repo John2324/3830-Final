@@ -1,6 +1,6 @@
 var jsApp = {
     onload: function() {
-        if (!me.video.init('jsapp', 640, 480, true, 2)) {
+        if (!me.video.init('jsapp', 640, 480, true, 1.5)) {
             alert("html 5 canvas is not supported by this browser.");
             return;
         }
@@ -8,7 +8,7 @@ var jsApp = {
         me.loader.preload(resources);
         me.state.change(me.state.LOADING);
         me.gamestat.add("coins", 0);
-        me.gamestat.add("totalCoins", 28);
+        me.gamestat.add("totalCoins", 20);
     },
     loaded: function() { 
         me.entityPool.add("player", PlayerEntity);
