@@ -24,9 +24,9 @@ var resources = [{
     src: "coin.png"
   },
   {
-    name: "badGuy",
+    name: "enemy",
     type: "image",
-    src: "badGuy.png"
+    src: "enemy.png"
   },
   {
     name: "thorn",
@@ -42,4 +42,24 @@ var resources = [{
     name: "elementSprites",
     type: "image",
     src: "elementSprites.png"
+  },
+  {
+    name: "titleScreen",
+    type: "image",
+    src: "titleScreen.png"
+  },
+  {
+    name: "instructions",
+    type: "image",
+    src: "instructions.png"
+  },
+  {
+    name: "winScreen",
+    type: "image",
+    src: "winScreen.png"
+  },
+  {
+    name: "winPlayer",
+    type: "image",
+    src: "winPlayer.png"
   }];

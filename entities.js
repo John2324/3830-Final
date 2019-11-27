@@ -1,6 +1,7 @@
 var PlayerEntity = me.ObjectEntity.extend({
   init: function(x, y, settings) {
     this.parent(x, y, settings);
+    me.game.viewport.fadeIn("#B70000", 200);
     me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
     this.setVelocity(4,14);
   },
@@ -20,11 +21,9 @@ var PlayerEntity = me.ObjectEntity.extend({
   },
   gameOver: function() {
     me.state.change(me.state.PLAY);
-    document.getElementById('game_state').innerHTML = "Try Again";
-    document.getElementById('instructions').innerHTML = "";
   },
   youWin: function() {
-    me.state.change(me.state.PLAY);
+    me.state.change(me.state.GAME_END);
   }
 });
 var CoinEntity = me.CollectableEntity.extend({
@@ -42,7 +41,7 @@ var CoinEntity = me.CollectableEntity.extend({
 });
 var EnemyEntity = me.ObjectEntity.extend({
   init: function(x, y, settings) {
-    settings.image = "badguy";
+    settings.image = "enemy";
     settings.spritewidth = 16;
     this.parent(x, y, settings);
     this.startX = x;
