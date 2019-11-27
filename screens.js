@@ -60,6 +60,9 @@ var WinScreen = me.ScreenObject.extend({
     if (this.title == null) {
       this.title = me.loader.getImage("winScreen");
     }
+    if (this.sprite == null) {
+      this.sprite = me.loader.getImage("winPlayer");
+    }
   },
   update: function() {
     if (me.input.isKeyPressed('jump')) {
@@ -69,5 +72,6 @@ var WinScreen = me.ScreenObject.extend({
   },
   draw: function(context){
     context.drawImage(this.title, 0, 0);
+    context.drawImage(this.sprite, me.game.viewport.width / 2 - 64, me.game.viewport.height / 2 -64);
   }
 });

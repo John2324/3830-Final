@@ -57,4 +57,9 @@ var resources = [{
     name: "winScreen",
     type: "image",
     src: "winScreen.png"
+  },
+  {
+    name: "winPlayer",
+    type: "image",
+    src: "winPlayer.png"
   }];
