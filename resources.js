@@ -52,4 +52,9 @@ var resources = [{
     name: "instructions",
     type: "image",
     src: "instructions.png"
+  },
+  {
+    name: "winScreen",
+    type: "image",
+    src: "winScreen.png"
   }];

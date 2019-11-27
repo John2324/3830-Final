@@ -23,7 +23,7 @@ var PlayerEntity = me.ObjectEntity.extend({
     me.state.change(me.state.PLAY);
   },
   youWin: function() {
-    me.state.change(me.state.PLAY);
+    me.state.change(me.state.GAME_END);
   }
 });
 var CoinEntity = me.CollectableEntity.extend({

@@ -23,6 +23,7 @@ var jsApp = {
         me.state.set(me.state.PLAY, new PlayScreen());
         me.state.set(me.state.MENU, new TitleScreen());
         me.state.set(me.state.USER, new InstructionScreen());
+        me.state.set(me.state.GAME_END, new WinScreen());
         me.state.transition("fade", "#000000", 250);
         me.state.change(me.state.MENU);
     }
