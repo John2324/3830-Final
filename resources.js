@@ -42,4 +42,14 @@ var resources = [{
     name: "elementSprites",
     type: "image",
     src: "elementSprites.png"
+  },
+  {
+    name: "titleScreen",
+    type: "image",
+    src: "titleScreen.png"
+  },
+  {
+    name: "instructions",
+    type: "image",
+    src: "instructions.png"
   }];
